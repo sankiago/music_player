@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+
+       <header>
+           <a class="header_icon"><img src="./media/icons/arrow-down-icon.png" alt=""></a>
+           <p class="header_caption">Playing from your heart</p>
+           <a id="queue_button" class="header_icon"><img src="./media/icons/playlist-icon.png" alt=""></a>
+        </header>
+
+        <section class="covers">
+            <div class="covers_current">
+                <img src="" alt="">
+            </div>
+        </section>
+        
+        <section class="details">
+           <h1 class="details_name"></h1>
+            <p class="details_artist"></p>
+
+            <div class="details_progress">
+                <p class="details_progress_time-current">0:00</p>
+                <progress value="0" max="100"  class="details_progress_bar"></progress>
+                <p class="details_progress_time-total">0:00</p>
+            </div>
+
+        </section>
+        
+        <section class="queue hidden">
+            <p class="queue_backButton">&lt;</p>
+            <div class="queue_header">
+                <img class="queue_header_cover" src="./media/img/ai-monogatari---9-love-stories-vinyl.gif" alt="">
+                <h3 class="queue_header_title">Playlist</h3>
+            </div>
+            <div class="queue_list">
+                <div class="list_grid queue_list_header">
+                    <p class="queue_list_header_number">#</p>
+                    <p class="queue_list_header_title">TÍTULO</p>
+                    <p class="queue_list_header_album">ALBÚM</p>
+                    <p class="queue_list_header_duration">DURACIÓN</p>
+                </div>
+                
+                <!-- <div class="list_grid queue_list_song">
+                    <p class="list_song_number">1</p>
+                    <div class="list_song_main">
+                        <img src="./media/album-covers/cover.jpg" alt="" class="queue_song_cover">
+                        <div class="queue_song_hover">
+                            <img src="./media/icons/play-icon.svg" alt="">
+                        </div>
+                        <h4 class="song_main_title">Crush</h4>
+                        <p class="song_main_artist">Glades</p>
+                    </div>
+                    <p class="list_song_album">Planetarium</p>
+                    <p class="list_song_duration">3:30</p>
+                </div> -->
+
+            </div>
+        </section>
+
+        <footer class="buttons">
+            <div id="random" class="button random_button buttons_button-small"><img src="./media/icons/random-icon.svg" alt="random"></div>
+            <div id="previous" class="button buttons_button-medium"><img src="./media/icons/previous-icon.svg" alt="previous"></div>
+            <div id="play" class="button buttons_button-big pause"><img id="play-icon"src="./media/icons/play-icon.svg" alt="play"><img class="hidden" id="pause-icon" src="./media/icons/pause-icon.svg" alt="play/pause"></div>
+            <div id="next" class="button buttons_button-medium"><img src="./media/icons/next-icon.svg" alt="next"></div>
+            <div id="loop" class="button buttons_button-small"><img src="./media/icons/loop-icon.svg" alt="loop"></div>
+            <audio class="player"src="" preload="metadata"></audio>
+        </footer>
+        
+    </div>
+    <script src="./index.js"></script> 
+</body>
+</html>
